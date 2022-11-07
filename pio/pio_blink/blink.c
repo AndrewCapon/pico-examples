@@ -23,6 +23,7 @@ int main() {
     blink_pin_forever(pio, 0, offset, 0, 3);
     blink_pin_forever(pio, 1, offset, 6, 4);
     blink_pin_forever(pio, 2, offset, 11, 1);
+    while(1);
 }
 
 void blink_pin_forever(PIO pio, uint sm, uint offset, uint pin, uint freq) {
